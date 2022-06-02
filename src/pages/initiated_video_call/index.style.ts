@@ -9,11 +9,6 @@ export const DivMain = styled.div`
   height: 100vh;
 `;
 
-export const DivTextStyled = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
 export const DivCameraBox = styled.video`
   width: 100%;
   object-fit: cover;
@@ -40,4 +35,13 @@ export const DivFrontCam = styled.video`
   object-fit: cover;
   border: 1.5px solid ${COLORS.WHITE};
   border-radius: 12px;
+`;
+
+export const DivTextStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 22px;
 `;

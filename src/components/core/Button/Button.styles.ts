@@ -2,18 +2,29 @@ import styled from '@emotion/styled';
 
 import { COLORS } from '@/constants/colors';
 
-export const ButtonStyled = styled.button<{ backgroundColor?: string; hoverColor?: string; isTransparent?: boolean }>`
-  ${({ isTransparent }) =>
+export const ButtonStyled = styled.button<{
+  backgroundColor?: string;
+  hoverColor?: string;
+  isTransparent?: boolean;
+  disabled?: boolean;
+}>`
+  ${({ isTransparent, disabled }) =>
     isTransparent
       ? `
       background-color: ${COLORS.BLUE_600};
       border-color: ${COLORS.BLUE_600};
       border: none;
 `
+      : disabled
+      ? `
+      background-color: ${COLORS.GREY_90};
+      cursor: not-allowed;
+`
       : `
-  border: 0px;
-  background-image: linear-gradient(to right, #38568f 0%, #38a1f7 100%, #38568f 100%);
-`}
+      border: 0px;
+      background-image: linear-gradient(to right, #38568f 0%, #38a1f7 100%, #38568f 100%);
+`};
+
   margin-left: 18px;
   margin-right: 18px;
   min-width: 100px;
@@ -38,14 +49,10 @@ export const ButtonStyled = styled.button<{ backgroundColor?: string; hoverColor
   background-size: 200% auto;
   box-shadow: 0 0 20px #eee;
   display: block;
-
-  &:disabled {
-    background-color: ${COLORS.GREY_90};
-    cursor: not-allowed;
-  }
+ 
   &:hover {
-    ${({ isTransparent }) =>
-      isTransparent
+    ${({ isTransparent, disabled }) =>
+      isTransparent || disabled
         ? `background-image:none;`
         : `background-image: linear-gradient(to right, #38568f 0%, #38a1f7 90%, #38568f 90%); `}
 `;

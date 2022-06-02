@@ -6,17 +6,18 @@ export const DivMain = styled.div`
 `;
 
 export const DivMainContainer = styled.div`
-  padding: 0px 20px;
+  padding: 20px 20px 0px 20px;
+  height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
-  align-content: space-between;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   margin-top: 10px;
   background: ${COLORS.WHITE};
   box-shadow: 0px -11px 13px rgba(0, 0, 0, 0.06);
   border-radius: 20px 20px 0px 0px;
-  min-height: 90vh;
+  -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+  animation: fadeInUp 500ms ease-in-out;
 
   .otpInput {
     margin: 0px;
@@ -47,14 +48,6 @@ export const DivMainContainer = styled.div`
     border-bottom: 2.5px solid ${COLORS.FAUX_CHINESE_BLUE};
   }
 
-  .otpInput1:focus {
-    border: none;
-    border-bottom: 2px solid ${COLORS.BLACK_100};
-    background: linear-gradient(white, white) padding-box,
-      linear-gradient(to left, ${COLORS.SKY_100}, ${COLORS.FAUX_CHINESE_BLUE}) border-box;
-    text-align: center;
-    outline: none;
-  }
   .btn {
     padding: 0px 8px;
   }
@@ -121,6 +114,10 @@ export const ResendText = styled.span`
 `;
 
 export const ButtonContainer = styled.div`
-  margin-top: 100px;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding-bottom: 22px;
+  margin-top: 100px;
 `;

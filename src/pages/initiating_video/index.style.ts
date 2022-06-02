@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { COLORS } from '@/constants/colors';
 
 export const DivMain = styled.div`
-  padding: 20px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10,6 +10,7 @@ export const DivMain = styled.div`
 `;
 export const DivSvg = styled.div`
   text-align: center;
+  animation: spin 2s linear infinite;
 `;
 export const DivForm = styled.div`
   margin-top: 20px;

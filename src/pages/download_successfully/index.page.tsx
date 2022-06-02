@@ -29,27 +29,29 @@ const DownloadSuccessfully = () => {
   };
   return (
     <DivMain>
-      <Heading text={t('download_successfully')} onClick={handleBack} />
-      <DivContentBody>
-        <DivContent>
-          <CheckMarkSvg />
-          <DivContentTitle>{t('file_download_successfully')}</DivContentTitle>
-          <DivContentDescription>
-            {t('kindly_reconfirm_your_share_code_to_grant_access_to_your_xml_file.')}
-          </DivContentDescription>
-        </DivContent>
-        <OtpContainerWrapper>
-          <OTPInput
-            autoFocus
-            isNumberInput
-            length={4}
-            inputClassName="otpInput"
-            onChangeOTP={(e) => {
-              console.log(e);
-            }}
-          />
-        </OtpContainerWrapper>
-      </DivContentBody>
+      <div>
+        <Heading text={t('download_successfully')} onClick={handleBack} />
+        <DivContentBody>
+          <DivContent>
+            <CheckMarkSvg />
+            <DivContentTitle>{t('file_download_successfully')}</DivContentTitle>
+            <DivContentDescription>
+              {t('kindly_reconfirm_your_share_code_to_grant_access_to_your_xml_file.')}
+            </DivContentDescription>
+          </DivContent>
+          <OtpContainerWrapper>
+            <OTPInput
+              autoFocus
+              isNumberInput
+              length={4}
+              inputClassName="otpInput"
+              onChangeOTP={(e) => {
+                console.log(e);
+              }}
+            />
+          </OtpContainerWrapper>
+        </DivContentBody>
+      </div>
       <ButtonWrapper>
         <Button onClick={handleContinue} className="m-auto">
           {t('proceed')}

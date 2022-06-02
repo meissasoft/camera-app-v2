@@ -13,7 +13,6 @@ import { ILanguage } from './index.types';
  *
  * @returns Language page
  */
-
 const ChooseLangugae = () => {
   const router = useRouter();
   const [langugaes, setLanguages] = useState<ILanguage[]>([
@@ -53,9 +52,19 @@ const ChooseLangugae = () => {
       code: 'pa',
     },
     {
-      name: 'Marati',
+      name: 'Marathi',
       isActive: false,
       code: 'mr',
+    },
+    {
+      name: 'Gujarati',
+      isActive: false,
+      code: 'gu',
+    },
+    {
+      name: 'Bengali',
+      isActive: false,
+      code: 'bn',
     },
     {
       name: 'Gujarati',
@@ -101,13 +110,13 @@ const ChooseLangugae = () => {
                 </div>
                 <div className="col-1">{isActive && <TickIcon />}</div>
               </Row>
-              <StyledLine />
+              {ind + 1 === langugaes.length ? '' : <StyledLine />}
             </>
           ))}
         </DivMarginTop>
       </div>
       <FooterButtonStyle>
-        <Button isBottom onClick={handleContinue} className="m-auto">
+        <Button isBottom onClick={handleContinue} className="fw-bold m-auto">
           Continue
         </Button>
       </FooterButtonStyle>

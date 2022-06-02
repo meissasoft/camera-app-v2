@@ -51,4 +51,5 @@ export const COLORS = {
   GREY_50: '#e5e5e5',
   GREY_600: '#6e6e6f',
   BLUE_600: '#e2ecf3',
+  RED: 'red',
 };

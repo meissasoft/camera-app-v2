@@ -20,7 +20,7 @@ const AadhaarXml = () => {
   const [ischecked, setIsChecked] = useState<boolean>(false);
 
   const onClickHeaderIcon = () => {
-    router.push('/aadhaar_xml');
+    router.push('/commence_video');
   };
 
   const handleContinue = () => {

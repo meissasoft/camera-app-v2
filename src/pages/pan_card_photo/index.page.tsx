@@ -12,13 +12,10 @@ import {
   DivCameraBox,
   DivFrontCam,
   DivMain,
-  DivFrontCamContainer,
   DivDocScanContainer,
   DivDocScan,
   PanCameraTextStyledWrapper,
   Canvas,
-  DivFrontCamLeftContainer,
-  DivFrontCamRightContainer,
   DivContainer,
   DivEmptyBlur,
 } from './index.styles';
@@ -37,21 +34,29 @@ const PanCard = () => {
   const photoRefFront: any = useRef(null);
   const videoRefFront: any = useRef(null);
   const videoRefBack: any = useRef(null);
-  const mediaStreamFront = useUserMedia(front, false);
+  const mediaStream = useUserMedia(front, false);
   const mediaRecorderFront: any = useRef(null);
   const mediaRecorderBack: any = useRef(null);
   const blobsRecordedFront: any = [];
   const blobsRecordedBack: any = [];
 
+  const turnOffCamera = () => {
+    if (mediaStream) {
+      mediaStream?.getTracks().forEach((track) => {
+        track.stop();
+      });
+    }
+  };
+
   useEffect(() => {
-    if (mediaStreamFront && videoRefFront.current && !videoRefFront.current.srcObject) {
+    if (mediaStream && videoRefFront.current && !videoRefFront.current.srcObject) {
       videoRefFront.current.setAttribute('autoplay', '');
       videoRefFront.current.setAttribute('muted', '');
       videoRefFront.current.setAttribute('playsinline', '');
-      videoRefFront.current.srcObject = mediaStreamFront;
+      videoRefFront.current.srcObject = mediaStream;
       videoRefFront.current.play();
       try {
-        mediaRecorderFront.current = new MediaRecorder(mediaStreamFront, {
+        mediaRecorderFront.current = new MediaRecorder(mediaStream, {
           mimeType: 'video/webm',
         });
         mediaRecorderFront.current.start(1000);
@@ -59,7 +64,7 @@ const PanCard = () => {
           blobsRecordedFront.push(e.data);
         });
       } catch (exe) {
-        mediaRecorderFront.current = new MediaRecorder(mediaStreamFront, {
+        mediaRecorderFront.current = new MediaRecorder(mediaStream, {
           mimeType: 'video/mp4',
         });
         mediaRecorderFront.current.start(1000);
@@ -68,14 +73,14 @@ const PanCard = () => {
         });
       }
     }
-    if (mediaStreamFront && videoRefBack.current && !videoRefBack.current.srcObject) {
+    if (mediaStream && videoRefBack.current && !videoRefBack.current.srcObject) {
       videoRefBack.current.setAttribute('autoplay', '');
       videoRefBack.current.setAttribute('muted', '');
       videoRefBack.current.setAttribute('playsinline', '');
-      videoRefBack.current.srcObject = mediaStreamFront;
+      videoRefBack.current.srcObject = mediaStream;
       videoRefBack.current.play();
       try {
-        mediaRecorderBack.current = new MediaRecorder(mediaStreamFront, {
+        mediaRecorderBack.current = new MediaRecorder(mediaStream, {
           mimeType: 'video/webm',
         });
         mediaRecorderBack.current.start(1000);
@@ -83,7 +88,7 @@ const PanCard = () => {
           blobsRecordedFront.push(e.data);
         });
       } catch (exe) {
-        mediaRecorderBack.current = new MediaRecorder(mediaStreamFront, {
+        mediaRecorderBack.current = new MediaRecorder(mediaStream, {
           mimeType: 'video/mp4',
         });
         mediaRecorderBack.current.start(1000);
@@ -92,25 +97,24 @@ const PanCard = () => {
         });
       }
     }
-  }, [mediaStreamFront]);
+  }, [mediaStream]);
 
   const takePhoto = () => {
     const width = 314;
     const height = width / (16 / 9);
-    const video = videoRefFront.current;
+    const video = videoRefBack.current;
     const photo = photoRefFront.current as any;
     photo.width = width;
     photo.height = height;
-    if (photo) {
-      const ctx = photo.getContext('2d');
-      ctx.drawImage(video, 0, 0, width, height);
-      const dataUrl = photo.toDataURL();
-      console.log('dataUrl', dataUrl);
-    }
+    const ctx = photo.getContext('2d');
+    ctx.drawImage(video, 0, 0, width, height);
+    const dataUrl = photo.toDataURL();
+    console.log('dataUrl', dataUrl);
   };
 
   useEffect(() => {
     setTimeout(() => {
+      turnOffCamera();
       router.push('/signature_captured');
     }, 15000);
   }, []);
@@ -120,21 +124,13 @@ const PanCard = () => {
       <DivCameraBox ref={videoRefBack} muted playsInline />
       <Canvas ref={photoRefFront}></Canvas>
       <DivContainer>
-        <DivEmptyBlur height="2vh" />
-        <DivFrontCamContainer>
-          <DivFrontCamLeftContainer>
-            <div></div>
-            <DivFrontCam ref={videoRefFront} muted playsInline />
-          </DivFrontCamLeftContainer>
-          <DivFrontCamRightContainer>&emsp; &nbsp; </DivFrontCamRightContainer>
-        </DivFrontCamContainer>
-        <DivEmptyBlur height="11vh" />
+        <DivEmptyBlur height="calc(50vh - 150px)" />
         <DivDocScanContainer>
-          <span>&emsp; &nbsp; </span>
+          <DivEmptyBlur height="220px">&emsp; &nbsp; </DivEmptyBlur>
           <DivDocScan />
-          <span>&emsp; &nbsp; </span>
+          <DivEmptyBlur height="220px">&emsp; &nbsp; </DivEmptyBlur>
         </DivDocScanContainer>
-        <DivEmptyBlur height="40vh" />
+        <DivEmptyBlur height="calc(50vh - 50px)" />
         <PanCameraTextStyledWrapper>
           <PanCardPhotos
             takePhoto={takePhoto}
@@ -144,6 +140,7 @@ const PanCard = () => {
           />
         </PanCameraTextStyledWrapper>
       </DivContainer>
+      <DivFrontCam ref={videoRefFront} muted playsInline />
     </DivMain>
   );
 };

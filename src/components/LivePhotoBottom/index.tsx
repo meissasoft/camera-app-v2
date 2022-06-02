@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 
 import { DoneIcon } from '@/assets/svg/done-icon';
-import { CameraTextStyled, DivCameraTextStyled } from './index.style';
+import { CameraTextStyled, DivCameraTextStyled, IconContainer } from './index.style';
 
 /**
  *
@@ -35,7 +35,11 @@ const BottomTextLivePhoto = ({ takePhoto }: Props) => {
   return (
     <DivCameraTextStyled>
       <CameraTextStyled>{instruction}</CameraTextStyled>
-      {icon && <DoneIcon />}
+      {icon && (
+        <IconContainer>
+          <DoneIcon />
+        </IconContainer>
+      )}
     </DivCameraTextStyled>
   );
 };
