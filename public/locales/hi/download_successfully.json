@@ -2,5 +2,9 @@
   "download_successfully": "सफलतापूर्वक डाउनलोड करें",
   "file_download_successfully": "फ़ाइल डाउनलोड सफलतापूर्वक",
   "kindly_reconfirm_your_share_code_to_grant_access_to_your_xml_file.": "अपनी एक्सएमएल फ़ाइल तक पहुंच प्रदान करने के लिए कृपया अपने शेयर कोड की पुन: पुष्टि करें।",
-  "proceed": "आगे बढ़ना"
+  "proceed": "आगे बढ़ना",
+  "download_failed": "डाउनलोड विफल",
+  "download_unsuccessful": "डाउनलोड विफल",
+  "file_not_downloaded_please_try_again": "फ़ाइल डाउनलोड नहीं हुई, कृपया पुनः प्रयास करें",
+  "try_again": "पुनः प्रयास करें"
 }

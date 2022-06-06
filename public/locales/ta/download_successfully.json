@@ -2,5 +2,9 @@
   "download_successfully": "பதிவிறக்கம் செய்யப்பட்டது",
   "file_download_successfully": "கோப்பு பதிவிறக்கம் வெற்றிகரமாக",
   "kindly_reconfirm_your_share_code_to_grant_access_to_your_xml_file.": "உங்கள் XML கோப்பிற்கான அணுகலை வழங்க, உங்கள் பகிர்வுக் குறியீட்டை மீண்டும் உறுதிப்படுத்தவும்.",
-  "proceed": "தொடரவும்"
+  "proceed": "தொடரவும்",
+  "download_failed": "பதிவிறக்கம் தோல்வியடைந்தது",
+  "download_unsuccessful": "பதிவிறக்கம் தோல்வியடைந்தது",
+  "file_not_downloaded_please_try_again": "கோப்பு பதிவிறக்கப்படவில்லை, மீண்டும் முயற்சிக்கவும்",
+  "try_again": "மீண்டும் முயற்சி செய்"
 }

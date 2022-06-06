@@ -6,5 +6,10 @@
   "resend": "আবার পাঠান",
   "proceed": "এগিয়ে যান",
   "enter_share_code": "শেয়ার কোড লিখুন",
-  "create_a_6_digit_code_to_secure_your_offline_ekyc": "আপনার অফলাইন eKYC সুরক্ষিত করতে একটি 6 সংখ্যার কোড তৈরি করুন"
+  "create_a_6_digit_code_to_secure_your_offline_ekyc": "আপনার অফলাইন eKYC সুরক্ষিত করতে একটি 6 সংখ্যার কোড তৈরি করুন",
+  "continue": "চালিয়ে যান",
+  "verification_failed": "যাচাই ব্যর্থ",
+  "verification_not_completed": "যাচাইকরণ সম্পূর্ণ হয়নি",
+  "your_verification_is_not_completed_please_try_again": "আপনার যাচাইকরণ সম্পূর্ণ হয়নি অনুগ্রহ করে আবার চেষ্টা করুন.",
+  "try_again": "আবার চেষ্টা করুন"
 }

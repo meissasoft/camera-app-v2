@@ -6,5 +6,10 @@
   "resend": "വീണ്ടും അയയ്ക്കുക",
   "proceed": "തുടരുക",
   "enter_share_code": "ഷെയർ കോഡ് നൽകുക",
-  "create_a_6_digit_code_to_secure_your_offline_ekyc": "നിങ്ങളുടെ ഓഫ്‌ലൈൻ eKYC സുരക്ഷിതമാക്കാൻ 6 അക്ക കോഡ് സൃഷ്‌ടിക്കുക"
+  "create_a_6_digit_code_to_secure_your_offline_ekyc": "നിങ്ങളുടെ ഓഫ്‌ലൈൻ eKYC സുരക്ഷിതമാക്കാൻ 6 അക്ക കോഡ് സൃഷ്‌ടിക്കുക",
+  "continue": "തുടരുക",
+  "verification_failed": "സ്ഥിരീകരണം പരാജയപ്പെട്ടു",
+  "verification_not_completed": "പരിശോധന പൂർത്തിയായിട്ടില്ല",
+  "your_verification_is_not_completed_please_try_again": "നിങ്ങളുടെ സ്ഥിരീകരണം പൂർത്തിയായിട്ടില്ല, വീണ്ടും ശ്രമിക്കുക.",
+  "try_again": "വീണ്ടും ശ്രമിക്കുക"
 }

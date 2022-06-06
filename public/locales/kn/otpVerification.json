@@ -6,5 +6,11 @@
   "resend": "ಮರುಕಳುಹಿಸಿ",
   "proceed": "ಮುಂದುವರೆಯಲು",
   "enter_share_code": "ಹಂಚಿಕೆ ಕೋಡ್ ನಮೂದಿಸಿ",
-  "create_a_6_digit_code_to_secure_your_offline_ekyc": "ನಿಮ್ಮ ಆಫ್‌ಲೈನ್ eKYC ಅನ್ನು ಸುರಕ್ಷಿತವಾಗಿರಿಸಲು 6 ಅಂಕಿಯ ಕೋಡ್ ಅನ್ನು ರಚಿಸಿ"
+  "create_a_6_digit_code_to_secure_your_offline_ekyc": "ನಿಮ್ಮ ಆಫ್‌ಲೈನ್ eKYC ಅನ್ನು ಸುರಕ್ಷಿತವಾಗಿರಿಸಲು 6 ಅಂಕಿಯ ಕೋಡ್ ಅನ್ನು ರಚಿಸಿ",
+  "continue": "ಮುಂದುವರಿಸಿ",
+  "verification_failed": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ",
+  "verification_not_completed": "ಪರಿಶೀಲನೆ ಪೂರ್ಣಗೊಂಡಿಲ್ಲ",
+  "your_verification_is_not_completed_please_try_again": "ನಿಮ್ಮ ಪರಿಶೀಲನೆ ಪೂರ್ಣಗೊಂಡಿಲ್ಲ ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+  "try_again": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು"
+  
 }

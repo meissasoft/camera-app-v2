@@ -6,5 +6,10 @@
   "resend": "మళ్లీ పంపండి",
   "proceed": "కొనసాగండి",
   "enter_share_code": "షేర్ కోడ్‌ని నమోదు చేయండి",
-  "create_a_6_digit_code_to_secure_your_offline_ekyc": "మీ ఆఫ్‌లైన్ eKYCని సురక్షితంగా ఉంచడానికి 6 అంకెల కోడ్‌ను సృష్టించండి"
+  "create_a_6_digit_code_to_secure_your_offline_ekyc": "మీ ఆఫ్‌లైన్ eKYCని సురక్షితంగా ఉంచడానికి 6 అంకెల కోడ్‌ను సృష్టించండి",
+  "continue": "కొనసాగించు",
+  "verification_failed": "ధృవీకరణ విఫలమైంది",
+  "verification_not_completed": "ధృవీకరణ పూర్తి కాలేదు",
+  "your_verification_is_not_completed_please_try_again": "మీ ధృవీకరణ పూర్తి కాలేదు దయచేసి మళ్లీ ప్రయత్నించండి.",
+  "try_again": "మళ్లీ ప్రయత్నించండి"
 }

@@ -2,5 +2,9 @@
   "download_successfully": "ഡൗൺലോഡ് വിജയകരമായി",
   "file_download_successfully": "ഫയൽ ഡൗൺലോഡ് വിജയകരമായി",
   "kindly_reconfirm_your_share_code_to_grant_access_to_your_xml_file.": "നിങ്ങളുടെ XML ഫയലിലേക്ക് ആക്‌സസ് അനുവദിക്കുന്നതിന് ദയവായി നിങ്ങളുടെ ഷെയർ കോഡ് വീണ്ടും സ്ഥിരീകരിക്കുക.",
-  "proceed": "തുടരുക"
+  "proceed": "തുടരുക",
+  "download_failed": "ഡൗൺലോഡ് പരാജയപ്പെട്ടു",
+  "download_unsuccessful": "ഡൗൺലോഡ് പരാജയപ്പെട്ടു",
+  "file_not_downloaded_please_try_again": "ഫയൽ ഡൗൺലോഡ് ചെയ്‌തിട്ടില്ല, വീണ്ടും ശ്രമിക്കുക",
+  "try_again": "വീണ്ടും ശ്രമിക്കുക"
 }

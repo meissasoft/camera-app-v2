@@ -6,5 +6,10 @@
   "resend": "पुन्हा पाठवा",
   "proceed": "पुढे जा",
   "enter_share_code": "शेअर कोड एंटर करा",
-  "create_a_6_digit_code_to_secure_your_offline_ekyc": "तुमचा ऑफलाइन eKYC सुरक्षित करण्यासाठी 6 अंकी कोड तयार करा"
+  "create_a_6_digit_code_to_secure_your_offline_ekyc": "तुमचा ऑफलाइन eKYC सुरक्षित करण्यासाठी 6 अंकी कोड तयार करा",
+  "continue": "सुरू",
+  "verification_failed": "पडताळणी अयशस्वी",
+  "verification_not_completed": "पडताळणी पूर्ण झाली नाही",
+  "your_verification_is_not_completed_please_try_again": "तुमचे सत्यापन पूर्ण झाले नाही कृपया पुन्हा प्रयत्न करा.",
+  "try_again": "पुन्हा प्रयत्न करा"
 }
