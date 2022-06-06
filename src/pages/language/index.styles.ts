@@ -3,17 +3,13 @@ import styled from '@emotion/styled';
 import { COLORS } from '@/constants/colors';
 
 export const DivMain = styled.div`
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100vh - 40px);
-  @media (max-height: 720px) {
-    height: calc(100vh - 110px);
-  }
-  @media (max-height: 670px) {
-    height: calc(100vh - 40px);
-  }
+  height: calc(100vh - 20px);
+  -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+  animation: fadeInUp 500ms ease-in-out;
 `;
 
 export const Row = styled.div`
@@ -53,8 +49,13 @@ export const DivMarginTop = styled.div`
   margin-top: -5px;
   overflow-y: scroll;
   overflow-x: hidden;
-  height: calc(100vh - 200px);
 `;
+
 export const FooterButtonStyle = styled.div`
   width: 100%;
+  margin-top: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding-bottom: 22px;
 `;

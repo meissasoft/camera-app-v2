@@ -26,65 +26,46 @@ export const DivCameraBox = styled.video`
   height: 100vh;
 `;
 
-export const DivFrontCamContainer = styled.div`
-  display: flex;
-`;
-
-export const DivFrontCamLeftContainer = styled.div`
-  display: flex;
-  justify-content: end;
-  width: 100%;
-  height: 140px;
-  flex-grow: 9;
-  > div {
-    flex-grow: 8;
-    backdrop-filter: blur(6px);
-  }
-`;
-
 export const DivFrontCam = styled.video`
   box-sizing: border-box;
   display: flex;
+  position: absolute;
+  right: 20px;
+  top: 20px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 120px;
+  height: 140px;
   object-fit: cover;
   border: 1.5px solid ${COLORS.WHITE};
   border-radius: 12px;
-  flex-grow: -1;
-  margin: 1px;
-`;
-
-export const DivFrontCamRightContainer = styled.div`
-  display: flex;
-  flex-grow: 1;
-  backdrop-filter: blur(6px);
 `;
 
 export const DivEmptyBlur = styled.div<{ height: string }>`
   height: ${({ height }) => height};
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.1);
 `;
 
 export const DivDocScanContainer = styled.div`
   display: flex;
   height: 220px;
-  span {
-    backdrop-filter: blur(6px);
-  }
 `;
 
 export const DivDocScan = styled.div`
   border: 1px solid ${COLORS.SHAMROCK_100};
-  margin: 1.8px;
   flex-grow: 5;
+  margin: 1px !important;
 `;
 
 export const PanCameraTextStyledWrapper = styled.div`
   display: flex;
   justify-content: center;
-  text-align: center;
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  padding-bottom: 22px;
 `;
 
 export const Canvas = styled.canvas`

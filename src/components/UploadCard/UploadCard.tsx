@@ -2,26 +2,24 @@ import React from 'react';
 
 import { UploadIcon } from '@/assets/svg/upload';
 
-import { DivContent, DivHeading, DivIcon, DivStepLayout } from './UploadCard.style';
+import { DivContent, DivHeading, DivIcon, DivUploadLayout } from './UploadCard.style';
 
 interface Props {
   content: string;
   heading: string;
-  onClick: any;
-  ref: any;
 }
 
-function UploadCard({ content, heading, onClick, ref }: Props) {
+function UploadCard({ content, heading }: Props) {
   return (
-    <DivStepLayout onClick={onClick} ref={ref}>
-      <div className="col-9">
+    <DivUploadLayout>
+      <div className="col-8">
         <DivHeading>{heading}</DivHeading>
         <DivContent>{content}</DivContent>
       </div>
-      <DivIcon className="col-3">
+      <DivIcon className="col-4">
         <UploadIcon />
       </DivIcon>
-    </DivStepLayout>
+    </DivUploadLayout>
   );
 }
 

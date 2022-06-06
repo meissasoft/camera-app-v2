@@ -33,7 +33,7 @@ const VerifyOtp = () => {
   };
 
   const handleContinue = () => {
-    router.push('/download_successfully');
+    router.push('/downloaded_data');
   };
 
   return (
@@ -89,7 +89,7 @@ const VerifyOtp = () => {
           </OtpContainer>
         </div>
         <ButtonContainer>
-          <Button onClick={handleContinue} className="my-5 m-auto">
+          <Button onClick={handleContinue} className="m-auto">
             {t('proceed')}
           </Button>
         </ButtonContainer>

@@ -9,19 +9,15 @@ export const DivMain = styled.div`
 `;
 
 export const DivInner = styled.div`
-  display: flex;
-  flex-direction: column;
   padding: 20px 20px 0px 20px;
+  height: calc(100vh - 50px);
   box-shadow: 0px -11px 13px rgba(0, 0, 0, 0.06);
   border-radius: 20px 20px 0px 0px;
-  height: calc(100vh - 60px);
-  @media (max-height: 720px) {
-    height: calc(100vh - 110px);
-  }
-  @media (max-height: 670px) {
-    height: calc(100vh - 60px);
-  }
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+  animation: fadeInUp 500ms ease-in-out;
 `;
 
 export const DivBarIcon = styled.div`
@@ -82,4 +78,10 @@ export const CapchaTextSpan = styled.span`
   color: ${COLORS.BLACK_HEAVY};
 `;
 
-export const BottomButtonDiv = styled.div``;
+export const BottomButtonDiv = styled.div`
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding-bottom: 22px;
+`;

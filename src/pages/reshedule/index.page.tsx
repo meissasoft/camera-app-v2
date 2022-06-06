@@ -128,11 +128,7 @@ const Reshedule = () => {
         </CustomDropDown>
       </div>
       <DivFooterButton>
-        <Button
-          onClick={handleContinue}
-          className={` m-auto ${selectOptionIcon === null ? 'confirmDisable' : ''}`}
-          // disabled={selectOptionIcon === null ? true : false}
-        >
+        <Button onClick={handleContinue} className={` m-auto ${selectOptionIcon === null ? 'confirmDisable' : ''}`}>
           {t('confirm')}
         </Button>
       </DivFooterButton>

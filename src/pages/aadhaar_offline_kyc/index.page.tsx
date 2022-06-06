@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
-import { useRef } from 'react';
 import Button from '@/components/core/Button';
 import Header from '@/components/core/Header';
 import UploadCard from '@/components/UploadCard';
+import { FieldInputStyled } from '@/components/core/FieldInput/FieldInput.styles';
 import { DivMain, FooterButtonStyle, FormLabel, StyledSpan, ButtonContainer, StepLayoutWrapper } from './index.styles';
 /**
  *
@@ -12,8 +12,6 @@ import { DivMain, FooterButtonStyle, FormLabel, StyledSpan, ButtonContainer, Ste
  */
 const AadhaarOfflineKyc = () => {
   const { t } = useTranslation('aadhaar_offline_kyc');
-
-  const ref = useRef<any>(null);
 
   const router = useRouter();
 
@@ -29,7 +27,7 @@ const AadhaarOfflineKyc = () => {
     router.push('/aadhaar_number');
   };
 
-  const onClickCard = () => {
+  const onChangeInput = () => {
     console.log('Card Clicked');
   };
 
@@ -38,12 +36,10 @@ const AadhaarOfflineKyc = () => {
       <div>
         <Header text={t('aadhaar_offline_kyc')} onClick={onClickHeaderIcon} />
         <StepLayoutWrapper>
-          <UploadCard
-            heading={t('upload_from_device')}
-            content={t('zip_file_should_not_be_more_that_3_days_old')}
-            onClick={onClickCard}
-            ref={ref}
-          />
+          <FieldInputStyled type="file" id="upload-file" onChange={onChangeInput} className="d-none" />
+          <label htmlFor="upload-file" className="w-100">
+            <UploadCard heading={t('upload_from_device')} content={t('zip_file_should_not_be_more_that_3_days_old')} />
+          </label>
         </StepLayoutWrapper>
       </div>
       <FooterButtonStyle>

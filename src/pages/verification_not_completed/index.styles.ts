@@ -10,14 +10,29 @@ export const DivMain = styled.div`
   -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
   animation: fadeInUp 500ms ease-in-out;
 `;
-export const VerificationStyled = styled.div`
-  padding: 20px 0px;
-  list-group-item: list-group-item-action;
+export const SvgDiv = styled.div`
+  display: flex;
+  justify-content: center;
 `;
-export const VerificationCardStyled = styled.div`
+
+export const StyledHeading = styled.p`
+  text-align: center;
+  margin-top: 15px;
+  color: ${COLORS.BLACK_100};
+  font-weight: 700;
+  font-size: 18px;
+`;
+
+export const StyledDescription = styled.p`
+  margin: 0px !important;
   text-align: center;
   margin-top: 5px;
+  color: ${COLORS.GREY_12};
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.6;
 `;
+
 export const VerificationSuccessfulTextStyled = styled.p`
   margin-top: 0px;
   font-style: normal;

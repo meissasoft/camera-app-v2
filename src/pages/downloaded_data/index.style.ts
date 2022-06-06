@@ -1,17 +1,15 @@
 import styled from '@emotion/styled';
 import { COLORS } from '@/constants/colors';
+
 export const DivMain = styled.div`
-  padding: 20px;
-  height: calc(100vh - 4px);
-  @media (max-height: 720px) {
-    height: calc(100vh - 70px);
-  }
-  @media (max-height: 670px) {
-    height: calc(100vh - 40px);
-  }
+  margin: 20px 20px 0px 20px;
+  height: calc(100vh - 20px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+  animation: fadeInUp 500ms ease-in-out;
+
   .otpInput {
     margin: 0px;
     font-size: 30px;
@@ -46,7 +44,6 @@ export const DivContentBody = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 70vh;
 `;
 
 export const DivContent = styled.div`
@@ -55,11 +52,11 @@ export const DivContent = styled.div`
 `;
 
 export const DivContentTitle = styled.div`
-    margin-top: 20px; 
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center,
-    color: ${COLORS.BLACK_100},
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: ${COLORS.BLACK_100};
 `;
 
 export const DivContentDescription = styled.div`
@@ -78,5 +75,9 @@ export const OtpContainerWrapper = styled.div`
 
 export const ButtonWrapper = styled.div`
   width: 100%;
-  margin-top: 80px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding-bottom: 22px;
+  margin-top: 20px;
 `;

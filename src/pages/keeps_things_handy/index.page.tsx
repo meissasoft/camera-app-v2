@@ -68,7 +68,7 @@ const KeepThingsHandy = () => {
   ]);
 
   const onClickHeaderIcon = () => {
-    router.push('/download_successfully');
+    router.push('/downloaded_data');
   };
 
   const handleStart = () => {

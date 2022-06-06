@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { DoneIcon } from '@/assets/svg/done-icon';
-import { CameraTextStyled, DivCameraTextStyled } from './index.style';
+import { CameraTextStyled, DivCameraTextStyled, IconContainer } from './index.style';
 
 /**
  *
@@ -28,14 +28,17 @@ const PanCardPhotos = ({ takePhoto, text1, text2, text3 }: Props) => {
     setTimeout(() => {
       setText(text3);
       takePhoto();
-      setIcon(false);
     }, 10000);
   }, []);
 
   return (
     <DivCameraTextStyled>
       <CameraTextStyled>{text}</CameraTextStyled>
-      {icon && <DoneIcon />}
+      {icon && (
+        <IconContainer>
+          <DoneIcon />
+        </IconContainer>
+      )}
     </DivCameraTextStyled>
   );
 };

@@ -2,5 +2,9 @@
   "download_successfully": "Download Successfully",
   "file_download_successfully": "File Download Successfully",
   "kindly_reconfirm_your_share_code_to_grant_access_to_your_xml_file.": "Kindly re-confirm your share code to grant access to your XML file.",
-  "proceed": "Proceed"
+  "proceed": "Proceed",
+  "download_failed": "Downlaod Failed",
+  "download_unsuccessful": "Download unsuccessful",
+  "file_not_downloaded_please_try_again": "File not downloaded, please try again",
+  "try_again": "Try Again"
 }

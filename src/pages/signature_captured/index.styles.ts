@@ -12,6 +12,9 @@ export const DivMain = styled.div`
 export const DivTextStyled = styled.div`
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
 `;
 
 export const DivCameraBox = styled.video`
@@ -45,13 +48,19 @@ export const DivFrontCam = styled.video`
 export const TextStyled = styled.div`
   color: ${COLORS.WHITE_100};
   font-weight: 600;
-  font-size: 15px;
-  position: absolute;
-  bottom: 30px;
-  padding: 0px 5px;
+  font-size: 16px;
+  padding: 10px;
   display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: ${COLORS.BLACK_100};
+  width: 100%;
   gap: 5px;
   span {
-    margin-top: -2px;
+    margin-top: 0px;
   }
 `;

@@ -14,10 +14,11 @@ import { DivMain, DivSvg, DivForm, ParagraphStyled, TextStyled } from './index.s
 const InitiatingVideo = () => {
   const router = useRouter();
   const { t } = useTranslation('initiating_video');
+
   useEffect(() => {
     setTimeout(() => {
       router.push('/initiated_video_call');
-    }, 3000);
+    }, 4000);
   }, []);
 
   const onClickHeaderIcon = () => {

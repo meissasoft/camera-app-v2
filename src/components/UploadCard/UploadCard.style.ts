@@ -2,13 +2,13 @@ import styled from '@emotion/styled';
 
 import { COLORS } from '@/constants/colors';
 
-export const DivStepLayout = styled.div`
+export const DivUploadLayout = styled.div`
   box-sizing: border-box;
   padding: 10px;
   margin: 20px 0px;
   width: 100%;
   display: flex;
-  border: 1px solid #0000;
+  border: 1px solid ${COLORS.BLACK_100};
   flex-direction: row;
   border-radius: 5px;
   background: linear-gradient(white, white) padding-box,
