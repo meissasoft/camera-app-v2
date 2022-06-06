@@ -2,5 +2,9 @@
   "download_successfully": "সফলভাবে ডাউনলোড করুন",
   "file_download_successfully": "ফাইল ডাউনলোড সফলভাবে",
   "kindly_reconfirm_your_share_code_to_grant_access_to_your_xml_file.": "আপনার XML ফাইলে অ্যাক্সেস দেওয়ার জন্য অনুগ্রহ করে আপনার শেয়ার কোডটি পুনরায় নিশ্চিত করুন৷",
-  "proceed": "এগিয়ে যান"
+  "proceed": "এগিয়ে যান",
+  "download_failed": "নামাতে ব্যার্থ",
+  "download_unsuccessful": "ডাউনলোড করা যায়নি",
+  "file_not_downloaded_please_try_again": "ফাইল ডাউনলোড হয়নি, আবার চেষ্টা করুন",
+  "try_again": "আবার চেষ্টা করুন"
 }

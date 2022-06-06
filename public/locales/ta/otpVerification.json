@@ -6,5 +6,10 @@
   "resend": "மீண்டும் அனுப்பு",
   "proceed": "தொடரவும்",
   "enter_share_code": "பங்குக் குறியீட்டை உள்ளிடவும்",
-  "create_a_6_digit_code_to_secure_your_offline_ekyc": "உங்கள் ஆஃப்லைன் eKYCஐப் பாதுகாக்க 6 இலக்கக் குறியீட்டை உருவாக்கவும்"
+  "create_a_6_digit_code_to_secure_your_offline_ekyc": "உங்கள் ஆஃப்லைன் eKYCஐப் பாதுகாக்க 6 இலக்கக் குறியீட்டை உருவாக்கவும்",
+  "continue": "தொடரவும்",
+  "verification_failed": "சரிபார்ப்பு தோல்வியடைந்தது",
+  "verification_not_completed": "சரிபார்ப்பு முடிக்கப்படவில்லை",
+  "your_verification_is_not_completed_please_try_again": "உங்கள் சரிபார்ப்பு முடிவடையவில்லை, மீண்டும் முயற்சிக்கவும்.",
+  "try_again": "மீண்டும் முயற்சி செய்"
 }

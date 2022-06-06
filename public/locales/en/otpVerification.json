@@ -10,5 +10,6 @@
   "verification_failed": "Verification Failed",
   "verification_not_completed": "Verification not completed",
   "your_verification_is_not_completed_please_try_again": "Your verification is not completed please try again.",
-  "try_again": "Try Again"
+  "try_again": "Try Again",
+  "continue": "Continue"
 }
