@@ -33,7 +33,7 @@ const VerifyOtp = () => {
   };
 
   const handleContinue = () => {
-    router.push('/download_successfully');
+    router.push('/downloaded_data');
   };
 
   return (

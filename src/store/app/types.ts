@@ -4,4 +4,5 @@ export type appState = {
   cardFront: string;
   cardBack: string;
   recordedVideo: string;
+  downloadFailed: boolean;
 };

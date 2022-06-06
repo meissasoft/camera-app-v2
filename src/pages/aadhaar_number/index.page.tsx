@@ -32,8 +32,8 @@ interface Values {
 
 const AadhaarNumber = () => {
   const initialValue: Values = {
-    aadhaarNumber: 'aadhaarNumber',
-    securityCode: 'securityCode',
+    aadhaarNumber: '',
+    securityCode: '',
   };
   const { t } = useTranslation('aadhaar_number');
 
@@ -48,7 +48,8 @@ const AadhaarNumber = () => {
   return (
     <DivMain>
       <Formik initialValues={initialValue} onSubmit={onFormSubmit} validationSchema={aadhaarNumber}>
-        {({ values }) => {
+        {({ values, errors }) => {
+          console.log('Err', errors);
           return (
             <Form>
               <DivInner>
@@ -70,6 +71,7 @@ const AadhaarNumber = () => {
                     autoFocus
                     className="my-2 m-auto"
                     value={values.aadhaarNumber}
+                    error={errors.aadhaarNumber}
                   />
                   <Field
                     as={FieldInput}
@@ -79,6 +81,7 @@ const AadhaarNumber = () => {
                     autoComplete="off"
                     className="my-2 m-auto"
                     value={values.securityCode}
+                    error={errors.securityCode}
                   />
                   <StyledSpan>{t('type_the_character_you_see_in_the_picture')}</StyledSpan>
                   <CapchaContainer>
@@ -89,7 +92,7 @@ const AadhaarNumber = () => {
                   </CapchaContainer>
                 </div>
                 <BottomButtonDiv>
-                  <Button className="m-auto" type="submit">
+                  <Button className="m-auto" type="submit" disabled={Object.keys(errors).length > 0}>
                     {t('send_otp')}
                   </Button>
                 </BottomButtonDiv>
