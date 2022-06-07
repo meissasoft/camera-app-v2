@@ -89,14 +89,12 @@ const Reshedule = () => {
           />
         </CalendarDiv>
 
-        <Divider></Divider>
-
+        <Divider />
         <CustomDropDown>
           <DefaultOptionDiv onClick={() => (dropDownOpen ? setDropDownOpen(false) : setDropDownOpen(true))}>
             <span>{selectedOption}</span>
             <span>{!dropDownOpen ? <ArrowBotom /> : <ArrowTop />}</span>
           </DefaultOptionDiv>
-
           <>
             {dropDownOpen && (
               <OptionsListDiv>

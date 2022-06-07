@@ -209,22 +209,20 @@ export const OptionsListDiv = styled.div`
   border-radius: 5px;
   padding: 0px 10px;
   background: ${COLORS.WHITE_200};
-  /* border: 1px solid ${COLORS.GREY_50}; */
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.09);
   border-radius: 5px;
   position: absolute;
   width: 100%;
+  z-index: 999;
 `;
 
 export const SingleOptionDiv = styled.div`
   border-bottom: 1.2px solid rgba(0, 0, 0, 0.2);
-  padding: 20px 20px;
+  padding: 14px 10px;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
   opacity: 0.8;
   .planeSpan {
     font-weight: 600;
