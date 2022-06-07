@@ -20,7 +20,7 @@ You will also see any lint errors in the console.
 
 ### `npm run storybook`
 
-Lauches storybook
+Lauch storybook
 
 ### `npm run build`
 
